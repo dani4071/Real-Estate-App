@@ -6,11 +6,11 @@ class danSectionHeading extends StatelessWidget {
   const danSectionHeading({
     super.key,
     required this.title,
-    this.icon = Icons.window,
+    this.icon,
   });
 
   final String title;
-  final IconData icon;
+  final IconData? icon;
 
   @override
   Widget build(BuildContext context) {
@@ -21,7 +21,7 @@ class danSectionHeading extends StatelessWidget {
         mainAxisAlignment: MainAxisAlignment.spaceBetween,
         children: [
           Text(title, style: texttheme.headlineSmall, maxLines: 1, overflow: TextOverflow.ellipsis),
-          Icon(Icons.window, color: danColors.primary, size: 30,),
+          Icon(icon, color: danColors.primary, size: 30,),
         ],
       ),
     );

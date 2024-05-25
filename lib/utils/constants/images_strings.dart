@@ -32,6 +32,11 @@ class danImage {
   static const String mapImage1 = "assets/house_screen_images/map1.jpg";
 
 
+/// ------------ PROFILE IMAGES --------------
+  static const String profileHeaderImage1 = "assets/images/profile_images/mountain.jpg";
+  static const String profileImage1 = "assets/images/profile_images/profilepic.webp";
+
+
 
 
   static const String image = "assets/images/image1.png";

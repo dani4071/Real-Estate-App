@@ -3,6 +3,7 @@ import 'package:my_first_official_app/features/shop/screens/home/widgets/feature
 import 'package:my_first_official_app/features/shop/screens/home/widgets/home_search_bar.dart';
 import 'package:my_first_official_app/features/shop/screens/home/widgets/horizontal_list_of_houses.dart';
 import 'package:my_first_official_app/utils/constants/sizes.dart';
+import 'package:my_first_official_app/utils/constants/texts.dart';
 
 import '../../../../common/widgets/texts/section_heading.dart';
 import 'widgets/home_app_bar.dart';
@@ -22,7 +23,7 @@ class homeScreen extends StatelessWidget {
             danHomeAppBar(),
 
             /// Home Texts
-            homeTexts(),
+            homeTexts(text: danTexts.homeText, subtext: danTexts.homeSubText,),
             SizedBox(
               height: danSizes.spacebtwItems,
             ),
@@ -42,6 +43,7 @@ class homeScreen extends StatelessWidget {
             /// Featured Header
             danSectionHeading(
               title: 'Featured Housing',
+              icon: Icons.window,
             ),
             SizedBox(
               height: danSizes.spacebtwItems,

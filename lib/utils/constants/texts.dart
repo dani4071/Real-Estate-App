@@ -17,6 +17,10 @@ class danTexts {
   static const String homeSubText = "Place";
 
 
+  static const String searchText = "Where are you looking";
+  static const String searchSubText = "For?";
+
+
 
   static const String firstname = "First Name";
   static const String lastname = "Last Name";

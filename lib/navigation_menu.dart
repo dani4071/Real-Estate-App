@@ -1,6 +1,8 @@
 import 'package:flutter/material.dart';
 import 'package:get/get.dart';
+import 'package:my_first_official_app/features/personalization/screens/profile/profile_screen.dart';
 import 'package:my_first_official_app/features/shop/screens/home/home_screen.dart';
+import 'package:my_first_official_app/features/shop/screens/search/search_screen.dart';
 import 'package:my_first_official_app/utils/constants/colors.dart';
 import 'package:my_first_official_app/utils/helpers/danHelperFunctions.dart';
 
@@ -59,6 +61,6 @@ class navigationDestination extends StatelessWidget {
 class NavigationController extends GetxController{
   final Rx<int> selectedIndex = 0.obs;
 
-  final screens = [homeScreen(), Container(color: Colors.red,), Container(color: Colors.purple,), Container(color: Colors.yellow,),];
+  final screens = [homeScreen(), searchScreen(), profileScreen(),];
 
 }

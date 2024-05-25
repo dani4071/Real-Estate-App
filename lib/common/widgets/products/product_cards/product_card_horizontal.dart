@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:my_first_official_app/utils/constants/colors.dart';
 import 'package:my_first_official_app/utils/constants/images_strings.dart';
+import 'package:my_first_official_app/utils/helpers/danHelperFunctions.dart';
 
 class danProductCardHorizontal extends StatelessWidget {
   const danProductCardHorizontal({
@@ -11,6 +12,7 @@ class danProductCardHorizontal extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     final texttheme = Theme.of(context).textTheme;
+    final isDark = danHelperFunction.isDarkMode(context);
     return Padding(
       padding: const EdgeInsets.all(10.0),
       child: Container(
@@ -19,7 +21,7 @@ class danProductCardHorizontal extends StatelessWidget {
         padding: EdgeInsets.symmetric(horizontal: 15),
         decoration: BoxDecoration(
           borderRadius: BorderRadius.circular(10),
-          color: Colors.white,
+          color: isDark ? Colors.black : Colors.white,
         ),
         child: Row(
           mainAxisAlignment: MainAxisAlignment.spaceBetween,

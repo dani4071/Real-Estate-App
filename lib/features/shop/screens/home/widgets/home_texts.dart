@@ -7,7 +7,12 @@ import 'package:my_first_official_app/utils/constants/texts.dart';
 class homeTexts extends StatelessWidget {
   const homeTexts({
     super.key,
+    required this.text,
+    required this.subtext,
   });
+
+  final String text;
+  final String subtext;
 
 
   @override
@@ -18,8 +23,8 @@ class homeTexts extends StatelessWidget {
       child: Column(
         crossAxisAlignment: CrossAxisAlignment.start,
         children: [
-          Text(danTexts.homeText, style: texttheme.headlineMedium,),
-          Text(danTexts.homeSubText, style: texttheme.headlineMedium!.apply(color: danColors.primary),),
+          Text(text, style: texttheme.headlineMedium,),
+          Text(subtext, style: texttheme.headlineMedium!.apply(color: danColors.primary),),
         ],
       ),
     );

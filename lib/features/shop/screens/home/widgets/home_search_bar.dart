@@ -8,7 +8,12 @@ import 'package:my_first_official_app/utils/device/device_utility.dart';
 class danSearchContainer extends StatelessWidget {
   const danSearchContainer({
     super.key,
+    this.icon = Iconsax.sort,
+    this.iconOnSeach = true,
   });
+
+  final IconData icon;
+  final bool iconOnSeach;
 
   @override
   Widget build(BuildContext context) {
@@ -36,7 +41,7 @@ class danSearchContainer extends StatelessWidget {
                 Text("Search your favourite location", style: TextStyle(color: Colors.black,),),
               ],
             ),
-            Icon(Iconsax.sort, color: danColors.primary,)
+            iconOnSeach ? Icon(icon, color: danColors.primary,) : SizedBox()
           ],
         ),
       ),

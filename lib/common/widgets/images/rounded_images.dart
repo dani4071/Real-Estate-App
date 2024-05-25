@@ -52,7 +52,8 @@ class danRoundedImage extends StatelessWidget {
                 : Image(
                     image: isNetworkImage
                         ? NetworkImage(imageUrl)
-                        : AssetImage(imageUrl) as ImageProvider)),
+                        : AssetImage(imageUrl) as ImageProvider,
+            fit: fit,)),
       ),
     );
   }

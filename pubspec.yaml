@@ -35,6 +35,9 @@ dependencies:
   iconsax: ^0.0.8
 
 
+  # Firebase
+  firebase_core: ^2.31.1
+
 
 
   # State management
@@ -89,6 +92,7 @@ flutter:
     - assets/images/signup/
     - assets/images/home_images/
     - assets/house_screen_images/
+    - assets/images/profile_images/
 
 #-------------------- Local Fonts ---------------------------#
   fonts:

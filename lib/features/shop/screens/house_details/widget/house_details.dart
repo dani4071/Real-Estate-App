@@ -48,7 +48,7 @@ class house_details extends StatelessWidget {
                 height: danSizes.spacebtwItems / 2,
               ),
               ReadMoreText(
-                danTexts.descriptionText,
+                danTexts.descriptionText1,
                 trimLines: 2,
                 trimMode: TrimMode.Line,
                 moreStyle:

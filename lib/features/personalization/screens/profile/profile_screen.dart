@@ -2,6 +2,9 @@ import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter/widgets.dart';
 import 'package:get/get.dart';
+import 'package:my_first_official_app/data/repositories/authentication/authentication_repository.dart';
+import 'package:my_first_official_app/data/upload_dummy_data/dummy_data.dart';
+import 'package:my_first_official_app/data/upload_dummy_data/upload_dummy_repository.dart';
 import 'package:my_first_official_app/features/personalization/screens/favourite/favourite_screen.dart';
 import 'package:my_first_official_app/features/personalization/screens/profile/widget/header_image.dart';
 import 'package:my_first_official_app/features/personalization/screens/profile/widget/name_and_email_widget.dart';
@@ -12,6 +15,8 @@ import 'package:my_first_official_app/utils/constants/images_strings.dart';
 import 'package:my_first_official_app/utils/constants/sizes.dart';
 import 'package:my_first_official_app/utils/helpers/danHelperFunctions.dart';
 
+import '../../../../data/upload_dummy_data/upload_dummy_model.dart';
+
 class profileScreen extends StatelessWidget {
   profileScreen({super.key});
 
@@ -19,6 +24,8 @@ class profileScreen extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
+    final controller = Get.put(AuthenticationRepository());
+    final controllerUpload = Get.put(DummyRepository());
     return Scaffold(
       body: SingleChildScrollView(
           child: Column(
@@ -51,10 +58,17 @@ class profileScreen extends StatelessWidget {
                   Get.to(() => cartScreen());
                 },),
                 Divider(),
+                profileMenu(icon: Icons.upload, text: 'Upload Itemss', onTap: () {
+                  // controllerUpload.uploadDummyData(danDummyData.allApartments);
+                },),
+                Divider(),
                 profileMenu(icon: Icons.person, text: 'Delete Account', onTap: () {},),
                 Divider(),
-                profileMenu(icon: Icons.logout, text: 'Logout', onTap: () {},),
+                profileMenu(icon: Icons.logout, text: 'Logout', onTap: () {
+                  controller.logoutUser();
+                },),
                 Divider(),
+
               ],
             ),
           ),

@@ -30,14 +30,14 @@ class OnBoardingController extends GetxController {
 
       if(kDebugMode){
         print("===============================Get Storage Next Button ===============");
-        print(storage.read("IsFirstTime"));
+        print(storage.read("ISFIRSTTIME"));
       }
 
-      storage.write("IsFirstTime", false);
+      storage.write("ISFIRSTTIME", false);
 
       if(kDebugMode){
-        print("===============================Get Storage Next Button ===============");
-        print(storage.read("IsFirstTime"));
+        print("===============================Get Storage Next Buttonnnn ===============");
+        print(storage.read("ISFIRSTTIME"));
       }
       Get.offAll(const loginScreen());
 

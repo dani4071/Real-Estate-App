@@ -26,6 +26,8 @@ dependencies:
   smooth_page_indicator: ^1.1.0
   flutter_rating_bar: ^4.0.1
   readmore: ^3.0.0
+  http: ^1.2.1
+
 
 
 
@@ -40,6 +42,8 @@ dependencies:
   firebase_auth: ^4.19.6
   firebase_storage: ^11.7.6
   cloud_firestore: ^4.17.4
+  connectivity_plus: ^5.0.2
+  logger: ^2.0.2+1
 
 
 
@@ -50,6 +54,7 @@ dependencies:
 
 
   # Product Specific
+  image_picker: ^1.0.7
 
 
 
@@ -96,6 +101,8 @@ flutter:
     - assets/images/home_images/
     - assets/house_screen_images/
     - assets/images/profile_images/
+    - assets/uploads/
+    - assets/uploads/apartments/
 
 #-------------------- Local Fonts ---------------------------#
   fonts:
@@ -116,7 +123,6 @@ flutter:
           weight: 600
         - asset: assets/fonts/Poppins-Bold.ttf
           weight: 800
-
 
 
 

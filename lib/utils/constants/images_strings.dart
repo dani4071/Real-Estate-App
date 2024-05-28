@@ -37,6 +37,34 @@ class danImage {
   static const String profileImage1 = "assets/images/profile_images/profilepic.webp";
 
 
+/// ---------- IMAGES TO UPLOAD -------------------------------------------
+  static const String uploadImage = "assets/uploads/nike1.png";
+  static const String uploadImage2 = "assets/uploads/nike2.jpg";
+  static const String uploadImage3 = "assets/uploads/nike3.png";
+  static const String uploadImage4 = "assets/uploads/nike4.png";
+  static const String uploadImage5 = "assets/uploads/nike5.jpg";
+  static const String uploadImage6 = "assets/uploads/nike6.jpg";
+
+
+/// ---------- IMAGES TO UPLOAD HOUSE -------------------------------------------
+  static const String uploadHouseImage = "assets/uploads/apartments/apartment1.jpg";
+  static const String uploadHouseImage2 = "assets/uploads/apartments/apartment2.jpg";
+  static const String uploadHouseImage3 = "assets/uploads/apartments/apartment3.jpg";
+  static const String uploadHouseImage4 = "assets/uploads/apartments/apartment4.png";
+  static const String uploadHouseImage5 = "assets/uploads/apartments/apartment5.jpg";
+  static const String uploadHouseImage6 = "assets/uploads/apartments/apartment6.jpg";
+  static const String uploadHouseImage7 = "assets/uploads/apartments/apartment7.jpg";
+  static const String uploadHouseImage8 = "assets/uploads/apartments/apartment8.png";
+  static const String uploadHouseImage9 = "assets/uploads/apartments/apartment9.jpeg";
+  static const String uploadHouseImage10 = "assets/uploads/apartments/apartment10.jpg";
+  static const String uploadHouseImage11 = "assets/uploads/apartments/apartment11.png";
+  static const String uploadHouseImage12 = "assets/uploads/apartments/apartment12.jpg";
+  static const String uploadHouseImage13 = "assets/uploads/apartments/apartment13.jpg";
+  static const String uploadHouseImage14 = "assets/uploads/apartments/apartment14.jpg";
+  static const String uploadHouseImage15 = "assets/uploads/apartments/apartment15.jpg";
+  static const String uploadHouseImage16 = "assets/uploads/apartments/apartment16.jpg";
+  static const String uploadHouseImage55 = "assets/uploads/apartments/apartment55.jpg";
+
 
 
   static const String image = "assets/images/image1.png";

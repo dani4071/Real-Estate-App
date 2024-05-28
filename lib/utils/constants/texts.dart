@@ -63,7 +63,14 @@ class danTexts {
 
 
 
-  static const String descriptionText = "This is the description of the item you are about to buy, do you like it, that depends entirely on you and not the dev Congratulations! Your Account awaits: Verify your Email to start shopping and experience a world of unrivaled deals and personalized offers.";
+  static const String descriptionText1 = "Stunning 2-Bedroom Apartment with Modern Amenities in Prime Location, Located in the heart of downtown, this exquisite apartment offers the perfect blend of urban convenience and modern comfort. Just steps away from popular dining, shopping, and entertainment options, it’s ideal for those seeking a vibrant city lifestyle.";
+  static const String descriptionText2 = "Living Room: Spacious and bright living area with large windows that offer plenty of natural light and breathtaking city views. Features hardwood floors and contemporary furnishings.";
+  static const String descriptionText3 = "Kitchen: Fully equipped gourmet kitchen with stainless steel appliances, granite countertops, a large island, and custom cabinetry. Perfect for those who love to cook and entertain.";
+  static const String descriptionText4 = "Bedrooms: Two generously sized bedrooms with plush carpeting, large closets, and en-suite bathrooms. Master bedroom includes a walk-in closet.";
+  static const String descriptionText5 = "Bathrooms: Two modern bathrooms with sleek fixtures, granite countertops, and a soaking tub in the master bath.";
+  static const String descriptionText6 = "Balcony: Private balcony with space for outdoor seating, perfect for enjoying morning coffee or evening relaxation.";
+
+
   static const String descriptionTextExpanded = "Congratulations! Your Account awaits: Verify your Email to start shopping and experience a world of unrivaled deals and personalized offers.";
 
 

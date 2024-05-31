@@ -1,4 +1,6 @@
 import 'package:flutter/material.dart';
+import 'package:get/get.dart';
+import 'package:my_first_official_app/features/shop/controller/Houses/apartment_controller.dart';
 import 'package:my_first_official_app/features/shop/screens/home/widgets/featured_housing_grid.dart';
 import 'package:my_first_official_app/features/shop/screens/home/widgets/home_search_bar.dart';
 import 'package:my_first_official_app/features/shop/screens/home/widgets/horizontal_list_of_houses.dart';
@@ -14,6 +16,7 @@ class homeScreen extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
+
     return Scaffold(
       body: SingleChildScrollView(
         child: Column(
@@ -35,7 +38,7 @@ class homeScreen extends StatelessWidget {
             ),
 
             /// Horizontal Scrollable list of housing
-            danHorizontalListOfHouses(),
+            // danHorizontalListOfHouses(),
             SizedBox(
               height: danSizes.spacebtwItems,
             ),

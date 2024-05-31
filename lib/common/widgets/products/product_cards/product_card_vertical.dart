@@ -1,5 +1,7 @@
 import 'package:flutter/material.dart';
+import 'package:my_first_official_app/common/custom_shapes/containers/rounded_container.dart';
 import 'package:my_first_official_app/utils/constants/colors.dart';
+import 'package:my_first_official_app/utils/constants/images_strings.dart';
 import 'package:my_first_official_app/utils/constants/sizes.dart';
 
 import '../../images/rounded_images.dart';
@@ -19,6 +21,7 @@ class danProductCardvertical extends StatelessWidget {
     this.price = '',
     required this.padding,
     this.onPress,
+    this.isNetworkImage = false,
   });
 
   final String Image;
@@ -30,6 +33,7 @@ class danProductCardvertical extends StatelessWidget {
   final EdgeInsetsGeometry padding;
   final double? width;
   final bool isForGrid;
+  final bool isNetworkImage;
   final String price;
   final VoidCallback? onPress;
 
@@ -45,17 +49,34 @@ class danProductCardvertical extends StatelessWidget {
           decoration: BoxDecoration(
             // boxShadow: [danShadowStyle.verticalProductShadow],
             color: Colors.grey.withOpacity(0.1),
+            // color: Colors.red,
             borderRadius: BorderRadius.circular(12),
           ),
           child: Column(
             crossAxisAlignment: CrossAxisAlignment.start,
             children: [
               /// Image
-              danRoundedImage(
-                imageUrl: Image,
-                backgroundColor: Colors.transparent,
-                borderRadius: danSizes.sm,
+              // Container(
+              //   width: double.infinity,
+              //   height: 120,
+              //   decoration: BoxDecoration(
+              //     borderRadius: BorderRadius.circular(10),
+              //     color: Colors.yellow,
+              //   ),
+              //   child: ClipRRect(borderRadius: BorderRadius.circular(10),child: Image(image: AssetImage(danImage.uploadHouseImage5), fit: BoxFit.fill, )),
+              // ),
+              danCircularContainer(
+                width: double.infinity,
+                height: 120,
+                backgroundcolor: Colors.grey.withOpacity(0.1),
+                radius: 5,
+                child: danRoundedImage(
+                  imageUrl: Image,
+                  isNetworkImage: isNetworkImage,
+                ),
               ),
+
+
               SizedBox(
                 height: danSizes.xs,
               ),
@@ -68,23 +89,23 @@ class danProductCardvertical extends StatelessWidget {
                   style: textTheme.titleMedium,
                 ),
               ),
+
               SizedBox(
                 height: danSizes.sm,
               ),
+
+
               Padding(
                 padding: const EdgeInsets.only(left: danSizes.xs),
-                child: Text.rich(TextSpan(children: [
-                  TextSpan(
-                      text: location,
-                      style: textTheme.bodyMedium!.apply(color: Colors.grey)),
-                  TextSpan(
-                    text: city,
-                    style: textTheme.bodyMedium!.apply(color: Colors.grey),
-                  ),
-                ])),
+                child: Text(
+                  "${location}, ${city}",
+                  style: textTheme.bodySmall,
+                  overflow: TextOverflow.ellipsis,
+                  maxLines: 1,
+                ),
               ),
 
-              isForGrid ? Spacer() : SizedBox(),
+              Spacer(),
 
               /// Rows with icons
               if (isForGrid)

@@ -11,7 +11,7 @@ class danRoundedImage extends StatelessWidget {
     this.borderRadius = danSizes.md,
     this.padding,
     this.onPressed,
-    this.backgroundColor = Colors.white,
+    this.backgroundColor = Colors.transparent,
     this.border,
     this.fit = BoxFit.fill,
     this.applyImageRadius = true,
@@ -53,7 +53,8 @@ class danRoundedImage extends StatelessWidget {
                     image: isNetworkImage
                         ? NetworkImage(imageUrl)
                         : AssetImage(imageUrl) as ImageProvider,
-            fit: fit,)),
+              fit: fit,
+            )),
       ),
     );
   }

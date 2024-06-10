@@ -37,3 +37,51 @@ class apartmentShimmer extends StatelessWidget {
     );
   }
 }
+
+
+
+class apartmentShimmer2 extends StatelessWidget {
+  const apartmentShimmer2({super.key, this.itemCount = 3});
+
+  final int itemCount;
+
+  @override
+  Widget build(BuildContext context) {
+    return Column(
+      children: [
+        Padding(
+          padding: const EdgeInsets.symmetric(horizontal: 20.0),
+          child: danShimmerEffect(width: double.infinity, height: 220),
+        ),
+      ],
+    );
+  }
+}
+
+class favouritesShimmer extends StatelessWidget {
+  const favouritesShimmer({super.key, this.itemCount = 3});
+
+  final int itemCount;
+
+  @override
+  Widget build(BuildContext context) {
+    return Column(
+      children: [
+        Padding(
+          padding: const EdgeInsets.symmetric(horizontal: 20.0),
+          child: danShimmerEffect(width: double.infinity, height: 120),
+        ),
+        SizedBox(height: 10,),
+        Padding(
+          padding: const EdgeInsets.symmetric(horizontal: 20.0),
+          child: danShimmerEffect(width: double.infinity, height: 120),
+        ),
+        SizedBox(height: 10,),
+        Padding(
+          padding: const EdgeInsets.symmetric(horizontal: 20.0),
+          child: danShimmerEffect(width: double.infinity, height: 120),
+        ),
+      ],
+    );
+  }
+}

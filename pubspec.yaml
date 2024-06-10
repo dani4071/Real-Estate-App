@@ -56,7 +56,8 @@ dependencies:
   # Product Specific
   image_picker: ^1.0.7
   shimmer: ^3.0.0
-
+  lottie: ^3.1.2
+  flutter_slidable: ^3.1.0
 
 
 # ------------------------------- ./ Packages End --------------------#
@@ -104,6 +105,7 @@ flutter:
     - assets/images/profile_images/
     - assets/uploads/
     - assets/uploads/apartments/
+    - assets/loading_images/
 
 #-------------------- Local Fonts ---------------------------#
   fonts:

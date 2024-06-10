@@ -1,5 +1,8 @@
 import 'package:flutter/material.dart';
+import 'package:get/get.dart';
 import 'package:iconsax/iconsax.dart';
+import 'package:my_first_official_app/data/repositories/authentication/authentication_repository.dart';
+import 'package:my_first_official_app/features/authentication/controllers/sign_up/sign_up_controller.dart';
 import 'package:my_first_official_app/utils/constants/texts.dart';
 
 import '../../../../../common/widgets/appbar/app_bar.dart';
@@ -13,11 +16,12 @@ class danHomeAppBar extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
+    final controller = Get.put(SignUpController());
     final texttheme = Theme.of(context).textTheme;
     return danAppBar(
       leadingIcon: Iconsax.location,
       leadingOnPressed: () {},
-      title: Text(danTexts.homeAppBarTitle, style: texttheme.titleMedium,),
+      title: Text("San Francisco", style: texttheme.titleMedium,),
       centertile: true,
       actions: [
         danCounterIcons()

@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:my_first_official_app/data/upload_dummy_data/upload_dummy_model.dart';
 import 'package:my_first_official_app/features/shop/screens/house_details/widget/ratings_and_price.dart';
 import 'package:my_first_official_app/utils/constants/sizes.dart';
 import 'package:my_first_official_app/utils/constants/texts.dart';
@@ -9,7 +10,10 @@ import 'icon_and_availability.dart';
 class house_details extends StatelessWidget {
   const house_details({
     super.key,
+    required this.apartment,
   });
+
+  final ApartmentModel apartment;
 
 
   @override
@@ -22,7 +26,7 @@ class house_details extends StatelessWidget {
         children: [
           /// Name
           Text(
-            "San Lax",
+            apartment.name,
             style: texttheme.headlineMedium,
           ),
 
@@ -31,7 +35,7 @@ class house_details extends StatelessWidget {
           ),
 
           /// Rating and Price
-          ratingAndPrice(),
+          ratingAndPrice(apartment: apartment,),
           SizedBox(
             height: danSizes.spacebtwItems,
           ),
@@ -48,7 +52,7 @@ class house_details extends StatelessWidget {
                 height: danSizes.spacebtwItems / 2,
               ),
               ReadMoreText(
-                danTexts.descriptionText1,
+                apartment.description,
                 trimLines: 2,
                 trimMode: TrimMode.Line,
                 moreStyle:
@@ -60,8 +64,8 @@ class house_details extends StatelessWidget {
 
               Row(
                 children: [
-                  iconAndAvailability(available: '2', name: 'Bed',),
-                  iconAndAvailability(icon: Icons.shower,available: '2', name: 'Bathroom',),
+                  iconAndAvailability(available: apartment.bedNumber.toString(), name: 'Bed',),
+                  iconAndAvailability(icon: Icons.shower,available: apartment.showerNumber.toString(), name: 'Shower',),
                   iconAndAvailability(icon: Icons.crop_square_outlined,available: '2400', name: 'sqft',),
                 ],
               ),

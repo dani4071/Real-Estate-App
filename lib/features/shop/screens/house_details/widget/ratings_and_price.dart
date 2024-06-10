@@ -1,5 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_rating_bar/flutter_rating_bar.dart';
+import 'package:get/get.dart';
+import 'package:my_first_official_app/data/upload_dummy_data/upload_dummy_model.dart';
 
 import '../../../../../common/widgets/texts/houses_price_text.dart';
 
@@ -7,7 +9,10 @@ import '../../../../../common/widgets/texts/houses_price_text.dart';
 class ratingAndPrice extends StatelessWidget {
   const ratingAndPrice({
     super.key,
+    required this.apartment,
   });
+
+  final ApartmentModel apartment;
 
   @override
   Widget build(BuildContext context) {
@@ -17,15 +22,15 @@ class ratingAndPrice extends StatelessWidget {
         Row(
           children: [
             RatingBarIndicator(
-                rating: 2.5,
+                rating: apartment.showerNumber.toDouble(),
                 itemSize: 30,
                 unratedColor: Colors.grey,
                 itemBuilder: (__, _) => Icon(Icons.star, color: Colors.amber,)),
-            Text("(4.9)")
+            Text("(${apartment.showerNumber.toString()})")
           ],
         ),
         danPriceText(
-          price: "5800",
+          price: apartment.price.toStringAsFixed(0),
           isLarge: true,
         ),
       ],

@@ -1,21 +1,34 @@
+import 'package:cached_network_image/cached_network_image.dart';
 import 'package:flutter/material.dart';
 import 'package:get/get.dart';
+import 'package:my_first_official_app/data/upload_dummy_data/upload_dummy_model.dart';
 import 'package:my_first_official_app/utils/constants/sizes.dart';
 
 class ImageController extends GetxController {
   static ImageController get instance => Get.find();
 
+  /// variables
+  RxString selectedProductImage = ''.obs;
 
 
+  List<String> getAllHousesImages(ApartmentModel apartment) {
+    // use set to add unique images only
+    Set<String> images = {};
 
+    // load thumbnail image
+    images.add(apartment.image);
 
+    // Assign thumbnail as selected image
+    selectedProductImage.value = apartment.image;
+    
+    // // Get all images from the product model if not null
+    // if (apartment.image != null) {
+    //   images.addAll(apartment.image!)
+    // }
 
+    return images.toList();
 
-
-
-
-
-
+  }
 
 
 
@@ -32,10 +45,9 @@ class ImageController extends GetxController {
                 children: [
                   Padding(
                     padding: const EdgeInsets.symmetric(
-                        vertical: danSizes.defaultSpace * 2,
+                      vertical: danSizes.defaultSpace * 2,
                     ),
-                    // child: CachedNetworkImage(imageUrl: image),
-                    child: Image(image: AssetImage(image), fit: BoxFit.contain,),
+                    child: CachedNetworkImage(imageUrl: image),
                   ),
                   const SizedBox(
                     height: danSizes.spacebtwItems,
@@ -56,6 +68,7 @@ class ImageController extends GetxController {
                   )
                 ],
               ),
-            ));
+        )
+    );
   }
 }

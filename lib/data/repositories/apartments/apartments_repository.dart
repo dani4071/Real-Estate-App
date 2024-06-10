@@ -23,4 +23,22 @@ class ApartmentRepository extends GetxController {
   catch(e) {
       throw 'Something went wrong on the Apartment repository';
   }
-}}
+}
+
+
+
+
+  Future<List<ApartmentModel>> getFavouriteApartment(List<String> apartmentId) async {
+    try {
+      final snapShot = await _db.collection('Apartments').where(FieldPath.documentId, whereIn: apartmentId).get();
+      return snapShot.docs.map((querySnapshot) => ApartmentModel.fromSnapshot(querySnapshot)).toList();
+    } on FirebaseException catch(e) {
+      throw "Firebase base base exception";
+    } on PlatformException catch(e) {
+      throw "Platform base base exception";
+    }
+    catch(e) {
+      throw 'Something went wrong on the Apartment repository';
+    }
+  }
+}

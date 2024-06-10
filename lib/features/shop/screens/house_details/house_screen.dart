@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:my_first_official_app/data/upload_dummy_data/upload_dummy_model.dart';
 import 'package:my_first_official_app/features/shop/screens/house_details/widget/house_details.dart';
 import 'package:my_first_official_app/features/shop/screens/house_details/widget/house_image_header.dart';
 import 'package:my_first_official_app/features/shop/screens/house_details/widget/location_map.dart';
@@ -7,7 +8,9 @@ import 'package:my_first_official_app/utils/constants/sizes.dart';
 
 
 class houseScreen extends StatelessWidget {
-  const houseScreen({super.key});
+  const houseScreen({super.key, required this.apartment});
+
+  final ApartmentModel apartment;
 
   @override
   Widget build(BuildContext context) {
@@ -19,10 +22,10 @@ class houseScreen extends StatelessWidget {
           crossAxisAlignment: CrossAxisAlignment.start,
           children: [
             /// House Header Image
-            houseImageHeader(),
+            houseImageHeader(apartment: apartment,),
 
             /// House details
-            house_details(),
+            house_details(apartment: apartment,),
 
             SizedBox(
               height: danSizes.spacebtwItems,
@@ -34,7 +37,7 @@ class houseScreen extends StatelessWidget {
             SizedBox(height: danSizes.spacebtwsections,),
 
             /// Buttons
-            Row_button_and_icon(),
+            Row_button_and_icon(apartment: apartment,),
             SizedBox(height: danSizes.spacebtwItems,),
           ],
         ),

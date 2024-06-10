@@ -8,6 +8,7 @@ import 'package:get_storage/get_storage.dart';
 import 'package:my_first_official_app/features/shop/screens/login/login_screen.dart';
 import 'package:my_first_official_app/features/shop/screens/onBoarding/onboarding_screen.dart';
 import 'package:my_first_official_app/navigation_menu.dart';
+import 'package:my_first_official_app/utils/local_storage/local_storage.dart';
 
 class AuthenticationRepository extends GetxController {
   static AuthenticationRepository get instance => Get.find();
@@ -39,6 +40,11 @@ class AuthenticationRepository extends GetxController {
     //   print(user);
     // }
     if(user != null){
+
+      // Initialize user specific storage
+      await danLocalStorage.init(user.uid);
+
+      // if user is valid go to the home screen
       Get.offAll(() => navigationMenu());
     } else {
       // Local Storage

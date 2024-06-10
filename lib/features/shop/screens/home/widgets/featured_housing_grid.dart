@@ -26,25 +26,18 @@ class danFeaturedHousing extends StatelessWidget {
 
       if(controller.isLoading.value) return const apartmentShimmer();
 
-      if(controller.allApartments.isEmpty) {
+      if(controller.featuredApartments.isEmpty) {
         return Center(child: Text('No Data Found!', style: Theme.of(context).textTheme.bodyMedium!.apply(color: Colors.red),),);
       }
 
       return danGridLayout(
-          itemCount: controller.allApartments.length,
+          itemCount: controller.featuredApartments.length,
           itemBuilder: (BuildContext, index) {
-            final apartment = controller.allApartments[index];
+            final apartment = controller.featuredApartments[index];
             return danProductCardvertical(
-              Image: apartment.image,
-              isNetworkImage: true,
-              price: apartment.price.toStringAsFixed(0),
-              width: 180,
-              padding: EdgeInsets.only(left: danSizes.defaultSpace),
-              isForGrid: true,
-              title: apartment.name,
-              location: "${apartment.location}",
-              city: apartment.city,
-              onPress: () => Get.to(houseScreen()),
+              // isForGrid: true,
+              // onPress: () => Get.to(houseScreen(apartment: controller.allApartments[index],)),
+              apartment: apartment,
             );
           });
     });

@@ -11,6 +11,8 @@ import 'package:my_first_official_app/features/shop/screens/rented_apartment/ren
 import 'package:my_first_official_app/utils/constants/sizes.dart';
 import 'package:my_first_official_app/utils/helpers/danHelperFunctions.dart';
 
+import '../../../../data/upload_dummy_data/dummy_data.dart';
+
 
 class profileScreen extends StatelessWidget {
   profileScreen({super.key});
@@ -54,7 +56,7 @@ class profileScreen extends StatelessWidget {
                 },),
                 Divider(),
                 profileMenu(icon: Icons.upload, text: 'Upload Itemss', onTap: () {
-                  // controllerUpload.uploadDummyData(danDummyData.allApartments);
+                  controllerUpload.uploadDummyData(danDummyData.allApartments);
                 },),
                 Divider(),
                 profileMenu(icon: Icons.person, text: 'Delete Account', onTap: () {},),

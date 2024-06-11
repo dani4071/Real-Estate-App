@@ -2,7 +2,7 @@ import 'package:flutter/material.dart';
 import 'package:get/get.dart';
 import 'package:my_first_official_app/common/widgets/appbar/app_bar.dart';
 import 'package:my_first_official_app/data/repositories/apartments/apartments_repository.dart';
-import 'package:my_first_official_app/everything_search/search_controller.dart';
+import 'package:my_first_official_app/features/shop/controller/search_controller.dart';
 import 'package:my_first_official_app/features/shop/screens/home/widgets/home_counter_icons.dart';
 import 'package:my_first_official_app/features/shop/screens/home/widgets/home_texts.dart';
 import 'package:my_first_official_app/features/shop/screens/search/widget/searchable_products.dart';

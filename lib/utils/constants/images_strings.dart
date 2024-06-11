@@ -66,6 +66,20 @@ class danImage {
   static const String uploadHouseImage55 = "assets/uploads/apartments/apartment55.jpg";
 
 
+  static const String uploadHouseImage20 = "assets/uploads/apartments/house20.jpg";
+  static const String uploadHouseImage21 = "assets/uploads/apartments/house21.jpg";
+  static const String uploadHouseImage22 = "assets/uploads/apartments/house22.jpg";
+  static const String uploadHouseImage23 = "assets/uploads/apartments/house23.jpg";
+  static const String uploadHouseImage24 = "assets/uploads/apartments/house24.jpg";
+  static const String uploadHouseImage25 = "assets/uploads/apartments/house25.jpg";
+  static const String uploadHouseImage26 = "assets/uploads/apartments/house26.jpg";
+  static const String uploadHouseImage27 = "assets/uploads/apartments/house27.jpg";
+  static const String uploadHouseImage28 = "assets/uploads/apartments/house28.jpg";
+  static const String uploadHouseImage29 = "assets/uploads/apartments/house29.jpg";
+  static const String uploadHouseImage30 = "assets/uploads/apartments/house30.png";
+  static const String uploadHouseImage31 = "assets/uploads/apartments/house31.jpg";
+
+
 
   static const String image = "assets/images/image1.png";
   static const String imageNft = "assets/images/333.png";

@@ -1,5 +1,5 @@
 import 'package:get/get.dart';
-import '../data/upload_dummy_data/upload_dummy_model.dart';
+import '../../../data/upload_dummy_data/upload_dummy_model.dart';
 
 
 class searchableController extends GetxController{

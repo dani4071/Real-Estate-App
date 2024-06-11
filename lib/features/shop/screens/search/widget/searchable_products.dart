@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:get/get.dart';
-import 'package:my_first_official_app/everything_search/search_controller.dart';
+import 'package:my_first_official_app/features/shop/controller/search_controller.dart';
 import '../../../../../common/widgets/layouts/grid_layout.dart';
 import '../../../../../common/widgets/products/product_cards/product_card_vertical.dart';
 import '../../../../../data/upload_dummy_data/upload_dummy_model.dart';

@@ -35,5 +35,22 @@ class danDummyData {
     ApartmentModel(id: '15', name: 'Steve Ave', image: danImage.uploadHouseImage15, isFeatured: false, description: danTexts.descriptionText2, bedNumber: 7, showerNumber: 12, price: 210.0, location: 'Trafalgar street', city: 'CD'),
     ApartmentModel(id: '16', name: 'Mand Road', image: danImage.uploadHouseImage16, isFeatured: false, description: danTexts.descriptionText3, bedNumber: 17, showerNumber: 1, price: 910.0, location: 'Michigan', city: 'PC'),
     ApartmentModel(id: '55', name: 'Taylor Ave', image: danImage.uploadHouseImage55, isFeatured: false, description: danTexts.descriptionText6, bedNumber: 6, showerNumber: 0, price: 200.0, location: 'Golf Estate', city: 'WB'),
+
+
+
+    ApartmentModel(id: '17', name: 'Cincinatta', image: danImage.uploadHouseImage20, isFeatured: true, description: danTexts.descriptionText6, bedNumber: 6, showerNumber: 0, price: 200.0, location: 'Michi Estate', city: 'SL'),
+    ApartmentModel(id: '18', name: 'Drako', image: danImage.uploadHouseImage21, isFeatured: true, description: danTexts.descriptionText6, bedNumber: 6, showerNumber: 0, price: 90.0, location: 'Camp Road', city: 'TX'),
+    ApartmentModel(id: '19', name: 'Old Quaters', image: danImage.uploadHouseImage22, isFeatured: true, description: danTexts.descriptionText6, bedNumber: 6, showerNumber: 0, price: 300.0, location: 'Quaters Estate', city: 'CA'),
+    ApartmentModel(id: '20', name: 'River Lane', image: danImage.uploadHouseImage23, isFeatured: true, description: danTexts.descriptionText6, bedNumber: 6, showerNumber: 0, price: 900.0, location: 'Fin Drive', city: 'CA'),
+    ApartmentModel(id: '21', name: 'Thunder St', image: danImage.uploadHouseImage24, isFeatured: true, description: danTexts.descriptionText6, bedNumber: 6, showerNumber: 1, price: 450.0, location: 'Rhrust View', city: 'WB'),
+    ApartmentModel(id: '22', name: 'Jeddah', image: danImage.uploadHouseImage25, isFeatured: true, description: danTexts.descriptionText6, bedNumber: 6, showerNumber: 0, price: 700.0, location: 'Michigan', city: 'NB'),
+    ApartmentModel(id: '23', name: 'Cross st', image: danImage.uploadHouseImage26, isFeatured: true, description: danTexts.descriptionText6, bedNumber: 6, showerNumber: 0, price: 750.0, location: 'Dean St', city: 'MT'),
+    ApartmentModel(id: '24', name: 'Edinburgh ave', image: danImage.uploadHouseImage27, isFeatured: true, description: danTexts.descriptionText6, bedNumber: 6, showerNumber: 0, price: 115.0, location: 'Liberty Estate', city: 'MI'),
+    ApartmentModel(id: '25', name: 'Scott lane', image: danImage.uploadHouseImage28, isFeatured: true, description: danTexts.descriptionText6, bedNumber: 6, showerNumber: 0, price: 210.0, location: 'Alhaji Estate', city: 'UT'),
+    ApartmentModel(id: '26', name: 'Fin street', image: danImage.uploadHouseImage29, isFeatured: true, description: danTexts.descriptionText6, bedNumber: 6, showerNumber: 0, price: 980.0, location: 'Golf Estate', city: 'WB'),
+    ApartmentModel(id: '27', name: 'Norway Ave', image: danImage.uploadHouseImage30, isFeatured: true, description: danTexts.descriptionText6, bedNumber: 6, showerNumber: 0, price: 100.0, location: 'Mint Drive', city: 'UI'),
+    ApartmentModel(id: '28', name: 'Camp St', image: danImage.uploadHouseImage31, isFeatured: true, description: danTexts.descriptionText6, bedNumber: 6, showerNumber: 0, price: 400.0, location: 'Quant Estate', city: 'NG'),
+
+
 ];
 }

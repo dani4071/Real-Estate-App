@@ -1,9 +1,6 @@
-import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
-import 'package:flutter/widgets.dart';
 import 'package:get/get.dart';
 import 'package:my_first_official_app/data/repositories/authentication/authentication_repository.dart';
-import 'package:my_first_official_app/data/upload_dummy_data/dummy_data.dart';
 import 'package:my_first_official_app/data/upload_dummy_data/upload_dummy_repository.dart';
 import 'package:my_first_official_app/features/personalization/screens/favourite/favourite_screen.dart';
 import 'package:my_first_official_app/features/personalization/screens/profile/widget/header_image.dart';
@@ -11,11 +8,9 @@ import 'package:my_first_official_app/features/personalization/screens/profile/w
 import 'package:my_first_official_app/features/personalization/screens/profile/widget/profile_menu.dart';
 import 'package:my_first_official_app/features/shop/screens/cart/cart_screen.dart';
 import 'package:my_first_official_app/features/shop/screens/rented_apartment/rented_apartment.dart';
-import 'package:my_first_official_app/utils/constants/images_strings.dart';
 import 'package:my_first_official_app/utils/constants/sizes.dart';
 import 'package:my_first_official_app/utils/helpers/danHelperFunctions.dart';
 
-import '../../../../data/upload_dummy_data/upload_dummy_model.dart';
 
 class profileScreen extends StatelessWidget {
   profileScreen({super.key});

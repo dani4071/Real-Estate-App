@@ -2,7 +2,6 @@ import 'dart:async';
 import 'package:connectivity_plus/connectivity_plus.dart';
 import 'package:flutter/services.dart';
 import 'package:get/get.dart';
-import 'package:http/http.dart' as http;
 import '../../common/widgets/loaders/snackbar.dart';
 
 /// manages the network connectivity status and provides method to check and handle connectivity changes.

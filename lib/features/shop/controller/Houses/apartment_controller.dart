@@ -1,4 +1,3 @@
-import 'package:flutter/material.dart';
 import 'package:get/get.dart';
 import 'package:my_first_official_app/common/widgets/loaders/snackbar.dart';
 import 'package:my_first_official_app/data/repositories/apartments/apartments_repository.dart';

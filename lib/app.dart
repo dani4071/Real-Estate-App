@@ -1,7 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:get/get.dart';
 import 'package:my_first_official_app/bindings/general_bindings.dart';
-import 'package:my_first_official_app/features/shop/screens/login/login_screen.dart';
 import 'package:my_first_official_app/utils/constants/colors.dart';
 import 'package:my_first_official_app/utils/theme/theme.dart';
 

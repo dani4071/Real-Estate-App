@@ -1,14 +1,10 @@
 import 'package:flutter/material.dart';
 import 'package:get/get.dart';
 import 'package:my_first_official_app/common/widgets/appbar/app_bar.dart';
-import 'package:my_first_official_app/common/widgets/layouts/grid_layout.dart';
 import 'package:my_first_official_app/common/widgets/loaders/animation_loader.dart';
 import 'package:my_first_official_app/common/widgets/products/favourite/favourite_controller.dart';
 import 'package:my_first_official_app/common/widgets/products/product_cards/product_card_horizontal.dart';
-import 'package:my_first_official_app/common/widgets/products/product_cards/product_card_vertical.dart';
 import 'package:my_first_official_app/common/widgets/shimmers/apartment_shimmer.dart';
-import 'package:my_first_official_app/data/upload_dummy_data/upload_dummy_model.dart';
-import 'package:my_first_official_app/features/shop/screens/home/home_screen.dart';
 import 'package:my_first_official_app/navigation_menu.dart';
 import 'package:my_first_official_app/utils/constants/images_strings.dart';
 import 'package:my_first_official_app/utils/constants/sizes.dart';

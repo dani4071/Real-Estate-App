@@ -1,8 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:get/get.dart';
-import 'package:my_first_official_app/common/widgets/icon/circular_icon.dart';
 import 'package:my_first_official_app/common/widgets/products/favourite/favourite_controller.dart';
-import '../../../../utils/constants/colors.dart';
 
 
 class favouriteIcon extends StatelessWidget {

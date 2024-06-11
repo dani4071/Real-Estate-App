@@ -316,14 +316,11 @@
 
 
 
-import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 import 'package:get/get.dart';
 import 'package:my_first_official_app/common/custom_shapes/containers/rounded_container.dart';
 import 'package:my_first_official_app/data/upload_dummy_data/upload_dummy_model.dart';
 import 'package:my_first_official_app/features/shop/screens/house_details/house_screen.dart';
-import 'package:my_first_official_app/utils/constants/colors.dart';
-import 'package:my_first_official_app/utils/constants/images_strings.dart';
 import 'package:my_first_official_app/utils/constants/sizes.dart';
 
 import '../../images/rounded_images.dart';

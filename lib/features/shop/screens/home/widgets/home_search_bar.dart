@@ -23,26 +23,29 @@ class danSearchContainer extends StatelessWidget {
 
     return Padding(
       padding: EdgeInsets.symmetric(horizontal: danSizes.defaultSpace),
-      child: Container(
-        width: danDeviceUtils.getScreenWidth(),
-        padding: EdgeInsets.all(danSizes.md),
-        decoration: BoxDecoration(
-          color: Colors.white,
-          borderRadius: BorderRadius.circular(danSizes.cardRadiusSm),
-          border: Border.all(color: Colors.grey),
-        ),
-        child: Row(
-          mainAxisAlignment: MainAxisAlignment.spaceBetween,
-          children: [
-            Row(
-              children: [
-                Icon(Iconsax.search_normal, color: Colors.black,),
-                SizedBox(width: danSizes.spacebtwItems / 2,),
-                Text("Search your favourite location", style: TextStyle(color: Colors.black,),),
-              ],
-            ),
-            iconOnSeach ? Icon(icon, color: danColors.primary,) : SizedBox()
-          ],
+      child: GestureDetector(
+        // onTap: () => Get.to(() => searchScreen()),
+        child: Container(
+          width: danDeviceUtils.getScreenWidth(),
+          padding: EdgeInsets.all(danSizes.md),
+          decoration: BoxDecoration(
+            color: Colors.white,
+            borderRadius: BorderRadius.circular(danSizes.cardRadiusSm),
+            border: Border.all(color: Colors.grey),
+          ),
+          child: Row(
+            mainAxisAlignment: MainAxisAlignment.spaceBetween,
+            children: [
+              Row(
+                children: [
+                  Icon(Iconsax.search_normal, color: Colors.black,),
+                  SizedBox(width: danSizes.spacebtwItems / 2,),
+                  Text("Search your favourite location", style: TextStyle(color: Colors.black,),),
+                ],
+              ),
+              iconOnSeach ? Icon(icon, color: danColors.primary,) : SizedBox()
+            ],
+          ),
         ),
       ),
     );

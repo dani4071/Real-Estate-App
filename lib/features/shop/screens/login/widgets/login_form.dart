@@ -1,7 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:get/get.dart';
 import 'package:my_first_official_app/features/authentication/controllers/login/login_controller.dart';
-import 'package:my_first_official_app/navigation_menu.dart';
 import 'package:my_first_official_app/utils/constants/sizes.dart';
 import 'package:my_first_official_app/utils/constants/texts.dart';
 

@@ -2,7 +2,6 @@ import 'package:flutter/material.dart';
 import 'package:my_first_official_app/data/upload_dummy_data/upload_dummy_model.dart';
 import 'package:my_first_official_app/features/shop/screens/house_details/widget/ratings_and_price.dart';
 import 'package:my_first_official_app/utils/constants/sizes.dart';
-import 'package:my_first_official_app/utils/constants/texts.dart';
 import 'package:readmore/readmore.dart';
 
 import 'icon_and_availability.dart';

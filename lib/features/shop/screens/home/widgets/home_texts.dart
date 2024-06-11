@@ -1,7 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:my_first_official_app/utils/constants/colors.dart';
 import 'package:my_first_official_app/utils/constants/sizes.dart';
-import 'package:my_first_official_app/utils/constants/texts.dart';
 
 
 class homeTexts extends StatelessWidget {

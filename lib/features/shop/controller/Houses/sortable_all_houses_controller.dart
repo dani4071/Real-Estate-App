@@ -1,8 +1,6 @@
-import 'package:cloud_firestore/cloud_firestore.dart';
 import 'package:get/get.dart';
 import 'package:my_first_official_app/data/repositories/apartments/apartments_repository.dart';
 import 'package:my_first_official_app/data/upload_dummy_data/upload_dummy_model.dart';
-import '../../../../common/widgets/loaders/snackbar.dart';
 
 
 class AllHousesController extends GetxController {
@@ -13,7 +11,7 @@ class AllHousesController extends GetxController {
   final RxString selectedSortOption = "Name".obs;
   final RxList<ApartmentModel> products = <ApartmentModel>[].obs;
 
-  
+
 
 
   void sortProducts (sortOption) {

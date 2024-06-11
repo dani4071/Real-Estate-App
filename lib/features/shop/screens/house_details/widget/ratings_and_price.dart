@@ -1,6 +1,5 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_rating_bar/flutter_rating_bar.dart';
-import 'package:get/get.dart';
 import 'package:my_first_official_app/data/upload_dummy_data/upload_dummy_model.dart';
 
 import '../../../../../common/widgets/texts/houses_price_text.dart';

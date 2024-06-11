@@ -3,7 +3,6 @@ import 'package:get/get.dart';
 import 'package:my_first_official_app/data/upload_dummy_data/upload_dummy_model.dart';
 import 'package:my_first_official_app/features/shop/screens/house_details/house_screen.dart';
 import 'package:my_first_official_app/utils/constants/colors.dart';
-import 'package:my_first_official_app/utils/constants/images_strings.dart';
 import 'package:my_first_official_app/utils/helpers/danHelperFunctions.dart';
 
 import '../favourite/favourite_Icon.dart';

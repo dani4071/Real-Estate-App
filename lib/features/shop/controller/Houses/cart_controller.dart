@@ -13,7 +13,6 @@ class CartController extends GetxController {
   RxInt noOfCartItems = 0.obs;
   RxDouble totalCartPrice = 0.0.obs;
   RxBool clicked = true.obs;
-  // RxInt productQuantityInCart = 0.obs;
   RxList<CartItemModel> cartItems = <CartItemModel>[].obs;
 
 

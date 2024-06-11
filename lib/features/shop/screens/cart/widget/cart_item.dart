@@ -1,12 +1,10 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_slidable/flutter_slidable.dart';
 import 'package:get/get.dart';
-import 'package:my_first_official_app/data/upload_dummy_data/upload_dummy_model.dart';
 import 'package:my_first_official_app/features/shop/controller/Houses/cart_controller.dart';
 import 'package:my_first_official_app/utils/constants/colors.dart';
 import 'package:my_first_official_app/utils/helpers/danHelperFunctions.dart';
 
-import '../../../../../common/widgets/products/product_cards/product_card_horizontal.dart';
 
 class cartItems extends StatelessWidget {
   const cartItems({

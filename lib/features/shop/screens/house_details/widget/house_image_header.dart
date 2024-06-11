@@ -3,14 +3,11 @@ import 'package:flutter/material.dart';
 import 'package:get/get.dart';
 import 'package:my_first_official_app/common/widgets/products/favourite/favourite_Icon.dart';
 import 'package:my_first_official_app/features/shop/controller/Houses/image_controller.dart';
-import 'package:my_first_official_app/features/shop/models/apartment_model.dart';
 import 'package:my_first_official_app/utils/constants/colors.dart';
-import 'package:my_first_official_app/utils/constants/images_strings.dart';
 import 'package:my_first_official_app/utils/helpers/danHelperFunctions.dart';
 
 import '../../../../../common/custom_shapes/curved_edges/curved_edges_widget.dart';
 import '../../../../../common/widgets/appbar/app_bar.dart';
-import '../../../../../common/widgets/icon/circular_icon.dart';
 import '../../../../../data/upload_dummy_data/upload_dummy_model.dart';
 
 class houseImageHeader extends StatelessWidget {

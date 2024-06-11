@@ -1,9 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:get/get.dart';
 import 'package:iconsax/iconsax.dart';
-import 'package:my_first_official_app/data/repositories/authentication/authentication_repository.dart';
 import 'package:my_first_official_app/features/authentication/controllers/sign_up/sign_up_controller.dart';
-import 'package:my_first_official_app/utils/constants/texts.dart';
 
 import '../../../../../common/widgets/appbar/app_bar.dart';
 import 'home_counter_icons.dart';

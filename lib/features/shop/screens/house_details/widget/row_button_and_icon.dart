@@ -1,6 +1,4 @@
 import 'package:flutter/material.dart';
-import 'package:get/get.dart';
-import 'package:my_first_official_app/common/widgets/loaders/snackbar.dart';
 import 'package:my_first_official_app/data/upload_dummy_data/upload_dummy_model.dart';
 import 'package:my_first_official_app/features/shop/controller/Houses/cart_controller.dart';
 import 'package:my_first_official_app/utils/constants/sizes.dart';

@@ -1,11 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:get/get.dart';
 import 'package:my_first_official_app/common/widgets/shimmers/apartment_shimmer.dart';
-import 'package:my_first_official_app/data/repositories/apartments/apartments_repository.dart';
-import 'package:my_first_official_app/features/shop/models/apartment_model.dart';
-import 'package:my_first_official_app/features/shop/screens/house_details/house_screen.dart';
-import 'package:my_first_official_app/utils/constants/images_strings.dart';
-import 'package:my_first_official_app/utils/constants/sizes.dart';
 
 import '../../../../../common/widgets/layouts/grid_layout.dart';
 import '../../../../../common/widgets/products/product_cards/product_card_vertical.dart';
